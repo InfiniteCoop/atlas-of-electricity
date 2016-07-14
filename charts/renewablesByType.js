@@ -83,6 +83,9 @@ var formatter = new google.visualization.NumberFormat({
 formatter.format(data, 1);
 formatter.format(data, 2);
 formatter.format(data, 3);
+formatter.format(data, 4);
+formatter.format(data, 5);
+
 
 
   // set chart options
@@ -240,6 +243,8 @@ var formatter = new google.visualization.NumberFormat({
 formatter.format(data, 1);
 formatter.format(data, 2);
 formatter.format(data, 3);
+formatter.format(data, 4);
+formatter.format(data, 5);
 
 resizeChart();
 };
