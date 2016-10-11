@@ -106,7 +106,7 @@ formatter.format(data, 3);
       maxAlternation: 1,
       minTextSpacing: 104,
     },
-    
+
     vAxis: {
       title: '',
       format: '#,###',
@@ -123,7 +123,7 @@ formatter.format(data, 3);
       textStyle: {
         color: '#333',
         fontSize: 13
-      }, 
+      },
       showColorCode: true
     },
 
