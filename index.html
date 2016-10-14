@@ -16,18 +16,18 @@
         edit the following tags as well as the title tag above on line 4
     -->
 
-    <meta name="description" content="This story map was created with the Story Map Cascade application in ArcGIS Online.">
+    <meta name="description" content="Electricity is integral to the modern American lifestyle. But the generation and transmission of electricity is a complex, opaque process. Here's how it all works.">
 
     <!--
     <meta property="og:type" content="article"/>
-    <meta property="og:title" content="Story Map Cascade"/>
-    <meta property="og:description" content="This story map was created with the Story Map Cascade application in ArcGIS Online."/>
+    <meta property="og:title" content="An Atlas of Electricity"/>
+    <meta property="og:description" content="Electricity is integral to the modern American lifestyle. But the generation and transmission of electricity is a complex, opaque process. Here's how it all works."/>
     <meta property="og:image" content="http://www.arcgis.com/apps/MapJournal/resources/common/icons/esri-globe.png"/>
 
     <meta name="twitter:card" content="photo" />
     <meta name="twitter:site" content="@EsriStoryMaps" />
-    <meta name="twitter:title" content="Story Map Cascade" />
-    <meta name="twitter:description" content="This story map was created with the Story Map Cascade application in ArcGIS Online." />
+    <meta name="twitter:title" content="An Atlas of Electricity" />
+    <meta name="twitter:description" content="Electricity is integral to the modern American lifestyle. But the generation and transmission of electricity is a complex, opaque process. Here's how it all works." />
     <meta name="twitter:image" content="http://www.arcgis.com/apps/MapJournal/resources/common/icons/esri-globe.png" />
     <meta name="twitter:url" content="http://www.arcgis.com/apps/Cascade/index.html" />
     -->
@@ -45,8 +45,9 @@
       var configOptions = {
         // Enter an application ID created through the Cascade builder
         appid: "6bcda5e199034d51b1287ed6a0db2061",
-        // Optionally to secure Cascade's access, use an OAuth application ID (example: 6gyOg377fLUhUk6f)
-        // User will need to sign-in to access the viewer even if your application is public
+        // Optionally, to secure Cascade's access, if the story item is private or to use the builder
+        //    configure an ArcGIS OAuth application ID (example: 6gyOg377fLUhUk6f)
+        // When specified, sign-in is mandatory even if your story is public
         oAuthAppId: "",
         // Optionally, to use the appid URL parameter, configure authorizedOwners to reference
         //    members whose stories can be viewed by this storytelling app.
@@ -68,8 +69,9 @@
 
     <script type="text/javascript">
       var app = {
-        version: '1.0.2',
-        pathJSAPI: '//js.arcgis.com/3.17/'
+        version: '1.1.3',
+        pathJSAPI3: '//js.arcgis.com/3.18/',
+        pathJSAPI4: '//js.arcgis.com/4.1/'
       };
     </script>
   </head>
@@ -196,7 +198,7 @@
         /*
          * Custom Javascript to be executed when a section becomes active
          */
-        topic.subscribe("story-scroll-section", function(cfg){
+        topic.subscribe("story-navigated-section", function(cfg){
            //console.log("The section", cfg.index, "is now active");
         });
 
