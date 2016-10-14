@@ -88,7 +88,7 @@ function drawChart() {
     title: 'Electricity Generation vs. Consumption',
 
       backgroundColor: 'transparent',
-    colors: ['#fff'],
+    colors: ['#AAC38A', '#4C0073'],
     fontName: 'Questrial',
 
     chartArea: {
