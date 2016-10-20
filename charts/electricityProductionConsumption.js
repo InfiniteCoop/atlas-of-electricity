@@ -1,5 +1,8 @@
 google.load("visualization", "1", {packages:["corechart"]});
-google.setOnLoadCallback(drawChart);
+google.setOnLoadCallback(function() {
+  setTimeout(drawChart, 500);
+});
+
 function drawChart() {
   
 
